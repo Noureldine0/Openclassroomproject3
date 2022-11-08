@@ -1,0 +1,45 @@
+@import "../utilitaire/box-shadow.scss";
+/*Explorer*/
+
+.explorer{
+    text-align: center;
+    background-color: #FAFAFA;
+    padding-top: 16px;
+    padding-bottom: 60px;
+    
+    & h2{
+        margin-top: px;
+        font-size: 25px;
+    
+    }
+    
+    & p{
+        font-size: 18px;
+        color: gray;
+    }
+    
+    /*gradient*/
+    
+    & button{
+        background-image: linear-gradient(to top, #9356dc, #FF79DA);
+        color: white;
+        font-weight: 500;
+        font-size: 17px;
+        padding: 16px 30px;
+        border: none;
+        border-radius: 25px;
+        margin-top: 10px;
+        @include box-shadow;
+    }
+    
+    & button:hover{
+        opacity: 0.8;
+        transition-duration: 0.25s;
+        box-shadow: .25rem .25rem 10px rgb(46, 45, 45);
+        
+        
+    }
+    
+}
+    
+
