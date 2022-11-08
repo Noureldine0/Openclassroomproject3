@@ -1,0 +1,22 @@
+{
+  "name": "projet3",
+  "version": "1.0.0",
+  "description": "ohmyfood",
+  "main": "Projet 3 ohmyfood",
+  "scripts": {
+    "sass": "sass --watch main.scss main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noureldine0/Openclassroomproject3.git"
+  },
+  "author": "hassan noureldine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Noureldine0/Openclassroomproject3/issues"
+  },
+  "homepage": "https://github.com/Noureldine0/Openclassroomproject3#readme",
+  "devDependencies": {
+    "sass": "^1.56.0"
+  }
+}
