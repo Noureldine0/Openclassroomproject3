@@ -1,5 +1,15 @@
-@import "./sass/base.scss";
-@import "./sass/layout/header.scss";
-@import "./sass/layout/paris.scss";
-@import "./sass/component/explorer.scss";
-@import "./sass/component/fonctionnement.scss";
+@use  "./sass/base.scss";
+@use  "./sass/layout/header.scss";
+@use  "./sass/layout/paris.scss";
+@use  "./sass/component/explorer.scss";
+@use  "./sass/component/fonctionnement.scss";
+@use "./sass/utilitaire/zoom.scss";
+@use "./sass/layout/menu.scss";
+@use "./sass/layout/footer.scss";
+@use "./sass/pages/resto.scss";
+
+@media (max-width: 939px) {
+    .img_page img{
+ height: 330px;
+    }
+}

@@ -1,21 +1,77 @@
+@use "../utilitaire/box-shadow.scss";
+@use "../utilitaire/zoom.scss";
+
+.fonctionnement h2{
+    margin-left: 16px;
+}
+
+
 .fonctionnement{
+    background-color: white;
+    margin-left: -16px;
+    padding: 16px;
+    margin-bottom: 0px;
+    padding-bottom: 40px;
+
+    counter-reset: ordre;
     & ol{
         display:flex;
-        flex-wrap:wrap ;
-        gap: 15px;
-        @media (max-width:809px){
+        gap: 30px;
+        @media (max-width:939px){
             flex-direction: column;
+
         }
     }
     & li{
+        position: relative;
+        &::before {
+            content: "" counter(ordre);
+            counter-increment: ordre;
+            color: white;
+            background-color: #9356DC;
+            padding: 16px;
+            width: 0px;
+            height: 0px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            
+            left: -18px;
+            :hover{
+                color: #9356DC;
+            }
+        }
+        list-style-type: none;
         background-color: #F6F6F6;
-        padding: 16px 32px;
+        padding: 20px 32px;
         flex-grow: 1;
         border-radius: 16px;
-        @include box-shadow;
-        border: 1px solid red;
+        @include box-shadow.box-shadow;
+        &:hover{
+            @include zoom.transform-zoom;
+            background-color: #e9def7;
+            i{
+                color: #9356DC;
+            }
+            
+        }
+        
     }
+    
+    & i {
+        margin-right: 16px;
+        color: rgb(134, 129, 129);
+        
+    }
+
+
 }
+
+
 
 
 

@@ -1,0 +1,315 @@
+body{background-color: #f6f6f6;}
+
+#title_restaurant1{
+  margin-top: 0px;
+}
+
+@keyframes anim {
+    0% {
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(0)
+    }
+
+
+}
+
+.menu_page{
+    background-color: #f6f6f6;
+    display: flex; 
+    flex-direction: column;
+    gap: 16px;
+    overflow: hidden;
+
+}
+.menu_page h3{
+    margin-left: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: relative;
+    background-color: #f6f6f6;
+    margin-top: 0px;
+}
+
+
+
+
+.menu_page h3:after{    
+    content: "";
+    height: 7px;
+    width: 40px;
+    background-color:#99e2d0 ;
+    position: absolute;
+    bottom: -14px;
+    left: 0px;
+    border: 1px solid white;
+    border-radius: 16px;
+}
+
+.menu_part{
+    border: 1px solid white;
+    border-radius: 16px;
+    box-shadow: 2px 1px 8px 1px lightgrey;
+    margin-bottom: 16px;
+    animation-name:slideIn;
+    animation-duration:1s;
+    animation-timing-function:ease;
+    animation-fill-mode: both;
+    margin-right: 11px;
+    margin-left: 11px;
+}
+
+@keyframes slideIn{
+  
+  from{
+    
+       opacity:0;
+       transform:translate3d(0, 30px, 0);
+       
+  }
+  
+  to{
+    
+      opacity:1;
+      transform:translate3d(0,0,0);
+      
+    
+  }
+
+}
+
+.menu_item  {
+    border-radius:16px;
+    background-color: white;
+    margin: 0px;
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    .menu_item_description{
+        padding: 16px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    h4{
+    padding: 0px;
+    margin: 0px;
+    }
+    .ellipsis_text {
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+    .ellipsis_text1{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: grey;
+    }
+    p{
+        font-weight: 100;
+        padding: 0px;
+        margin: 0px;
+      }
+      .price{
+        display: flex;
+        align-items: flex-end;
+        margin-left: auto;
+        font-weight: bolder;
+        padding: 16px;
+      }
+      .confirm{
+        background-color: #99e2d0;
+        border-radius: 0 16px 16px 0;
+        margin-right: -64px;
+        width: 64px;
+        transition: all 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        i{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 24px;
+          height: 24px;
+          color: #99e2d0;
+          border: 1px solid white;
+          border-radius: 16px;
+          background-color: white;
+        }
+      }
+
+      
+      &:hover {
+        .confirm{   
+        margin-right: 0px;
+        }
+        i{
+            animation: anim 1s ease;
+        }
+       
+      }
+      
+
+}
+
+.delay-0{
+    animation-delay: 100ms;
+  }
+
+  .delay-1{
+    animation-delay: 200ms;
+  }
+
+  .delay-2{
+    animation-delay: 300ms;
+  }
+
+  .delay-3{
+    animation-delay: 400ms;
+  }
+
+  .delay-4{
+    animation-delay: 500ms;
+  }
+
+  .delay-5{
+    animation-delay: 600ms;
+  }
+  .delay-6{
+    animation-delay: 700ms;
+  }
+
+  .delay-7{
+    animation-delay: 800ms;
+  }
+
+  .delay-8{
+    animation-delay: 900ms;
+  }
+
+  .delay-9{
+    animation-delay: 1000ms;
+  }
+
+
+.img_page img{
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+}
+
+.img_page2 img{
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+}
+
+.main_page {
+    margin-bottom: -16px;
+    position: relative;
+    border: 1px solid white;
+    border-radius: 48px 48px 0 0;
+    margin-top: -64px;
+    background-color: #f6f6f6;
+    @for $i from 1 through 10{
+        
+    }
+    
+    h2{
+        font-family: "Shrikhand", "sans-serif";
+        font-size: 30px;
+        margin-left: 16px;
+    }
+    i{
+        font-size: 32px;
+        position: absolute;
+        right: 16px;
+        bottom: 30px;
+        align-items: center;
+        padding-right: 20px;
+       
+    }
+
+    .fa-solid{
+        color: transparent;
+        background-image: linear-gradient(to top, rgb(148,0,211), rgb(255,192,203));
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: 200ms;
+    }
+    .fa-solid:hover{
+        opacity: 1;
+    }
+
+    .main_page{
+        background-color: black;
+
+          h2{
+        font-family: "Shrikhand", "sans-serif";
+        font-size: 32px;
+        margin-left: 20px;
+    }
+    i{
+        font-size: 32px;
+        position: absolute;
+        right: 16px;
+        bottom: 35px;
+        align-items: center;
+        padding-right: 20px;
+       
+    }
+
+    .fa-solid{
+        color: transparent;
+        background-image: linear-gradient(to top, rgb(148,0,211), rgb(255,192,203));
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: 200ms;
+    }
+    .fa-solid:hover{
+        opacity: 1;
+    }
+
+    .main_page{
+        background-color: black;
+    }
+    }
+}
+
+
+.command{
+    margin-left: 21%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.command button{
+    width: 55vw;
+    height: 8vh;
+    border-radius: 32px;
+    background-image: linear-gradient(to top, rgb(148,0,211), rgb(255,192,203));
+    font-size: 19px;
+    color: white;
+    border: none;
+    box-shadow: 5px 6px 5px 0px grey;
+    transition: all 200ms;
+ }
+
+ .command button:hover{
+    filter: brightness(115%);
+    box-shadow: 2px 1px 16px -3px #000000;
+ }
+ 
+
+ .fa-arrow-left::before{
+  position: absolute;
+  left: 17px;
+  bottom:35px;
+  font-size: 25px;
+ }

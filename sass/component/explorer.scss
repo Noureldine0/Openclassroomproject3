@@ -1,9 +1,9 @@
-@import "../utilitaire/box-shadow.scss";
+@use "../utilitaire/box-shadow.scss";
 /*Explorer*/
 
 .explorer{
     text-align: center;
-    background-color: #FAFAFA;
+    background-color: #f6f6f6;
     padding-top: 16px;
     padding-bottom: 60px;
     
@@ -29,7 +29,7 @@
         border: none;
         border-radius: 25px;
         margin-top: 10px;
-        @include box-shadow;
+        @include box-shadow.box-shadow;
     }
     
     & button:hover{
@@ -41,5 +41,7 @@
     }
     
 }
+
+
     
 

@@ -10,6 +10,57 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-main{
-    padding: 0 16px;
+a{
+    text-decoration: none;
+    color: inherit;
 }
+
+
+.spinner{
+    $animation-duration: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: #fff;
+    opacity: 0.9;
+    height: 100vh;
+    inset: 0;
+    z-index: 1;
+    animation: off 200ms $animation-duration;
+    animation-fill-mode: forwards;
+    animation-delay: $animation-duration;
+    transform-origin: top;
+    color: #9356DC;
+    i{
+       animation: spin 2s;
+    }
+ }
+ @keyframes off{
+    0%{
+       transform: scale(1);
+    }
+    100%{
+       transform: scale(0);
+    }
+ 
+ }
+ 
+ @keyframes spin{
+    0%{
+       transform: rotate(0deg);
+    }
+ 
+    100%{
+       transform: rotate(360deg);
+    }
+ }
+ 
+ @keyframes appear{
+    0%{
+       transform: scale(0);
+    }
+    100%{
+       transform: scale(1);
+    }
+ }
