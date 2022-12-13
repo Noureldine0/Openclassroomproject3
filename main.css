@@ -92,7 +92,6 @@ header {
   /*gradient*/
 }
 .explorer h2 {
-  margin-top: px;
   font-size: 25px;
 }
 .explorer p {
@@ -217,7 +216,7 @@ header {
   min-width: 100%;
 }
 .card__image {
-  background-image: url("../../Images/menu1.jpg");
+  background-image: url(Images/menu1.jpg);
   height: 200px;
   background-size: cover;
   border-top-left-radius: 16px;
@@ -225,13 +224,13 @@ header {
   background-position: 0px;
 }
 .card__image-2 {
-  background-image: url("../../Images/menu-2.jpg");
+  background-image: url(Images/menu-2.jpg);
 }
 .card__image-3 {
-  background-image: url("../../Images/menu-3.jpg");
+  background-image: url(Images/menu-3.jpg);
 }
 .card__image-4 {
-  background-image: url("../../Images/menu-4.jpg");
+  background-image: url(Images/menu-4.jpg);
 }
 .card__description {
   position: relative;
